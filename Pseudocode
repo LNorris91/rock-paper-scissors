@@ -7,3 +7,5 @@ Create a function that will call both user and computer choices and return resul
 create variables to house the user and computers scores
 
 create a function to play a game consisting of 5 rounds that also keeps track of scores
+
+Create a function that displays the final match results
