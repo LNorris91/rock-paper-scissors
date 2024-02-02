@@ -1,2 +1,9 @@
-Create a variable called getComputerChoice that will randomly return either rock, paper, or scissors
+Create a function called getComputerChoice that will randomly return either rock, paper, or scissors
 
+Create a case insensitive prompt to get users answer
+
+Create a function that will call both user and computer choices and return results of that round
+
+create variables to house the user and computers scores
+
+create a function to play a game consisting of 5 rounds that also keeps track of scores
