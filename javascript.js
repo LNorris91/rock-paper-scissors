@@ -1,17 +1,14 @@
-//create variables to house the user and computer's scores
+
 let userScore = 0;
 let computerScore = 0;
 
-//create a function to play a game consisting of 5 rounds that also keeps track of scores
 function playGame() {
-
      //Create a function that will randomly return either rock, paper, or scissors
     let computerChoice = ['rock', 'paper', 'scissors'];
     function getComputerChoice() {
         return computerChoice [(Math.floor(Math.random() * 3))];
     }
-    //Create a case insensitive prompt to get users answer
-    let userSelection = prompt("Make your selection!", "Rock, Paper, or Scissors?").toLowerCase();
+    //let userSelection = prompt("Make your selection!", "Rock, Paper, or Scissors?").toLowerCase();
     let computerSelection = getComputerChoice();
     
     //Create a function that will call both user and computer choices and return results of that round
@@ -29,12 +26,27 @@ function playGame() {
         } else return`You must've done something wrong, you fool! ${userSelection} is not valid! Try again!`;
     }
             console.log(playRound(userSelection, computerSelection))
+            console.log (userScore, computerScore)
 }
-playGame()
-playGame()
-playGame()
-playGame()
-playGame()
+
+const rockBtn = document.querySelector("#rock");
+rockBtn.addEventListener('click', (e) => {
+    console.log(e.target.value)
+    userSelection = e.target.value
+    playGame()
+})
+const paperBtn = document.querySelector("#paper");
+paperBtn.addEventListener('click', (e) => {
+    console.log(e.target.value)
+    userSelection = e.target.value
+    playGame()
+})
+const scissorsBtn = document.querySelector("#scissors");
+scissorsBtn.addEventListener('click', (e) => {
+    console.log(e.target.value)
+    userSelection = e.target.value
+    playGame()
+})
 
 //Create a function that displays the final match results
 function matchResults() {
@@ -45,5 +57,6 @@ function matchResults() {
     } else if (userScore == computerScore) {
         return `You both live to fight another day. you tied and both scored ${userScore}`;
     }
+    console.log(matchResults())
 }
-console.log(matchResults())
+
