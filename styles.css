@@ -10,12 +10,12 @@
     align-items: center;
 }
 h1 {
-    background-color: #1d1919;
+    background-color: #171515;
     padding: 60px 0px 40px;
     margin-top: -20px;
     width: 100vw;
     text-align: center;
-    box-shadow: 0px 0px 20px 6px rgb(208, 249, 255);
+    box-shadow: 0px 0px 20px 6px rgb(255, 208, 208);
     font-weight: lighter;
     text-shadow: 0px 0px 10px rgb(208, 249, 255);
 }
@@ -30,6 +30,11 @@ h1 {
     display: flex;
     gap: 10px;
     align-items: center;
+    border: 1px solid rgb(208, 249, 255);
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow: 0px 0px 5px 1px rgb(208, 249, 255), 
+                inset 0px 0px 5px 1px rgb(208, 249, 255);
 }
 .scores label {
     font-size: 20px;
@@ -63,9 +68,10 @@ img {
     pointer-events: none;
 }
 #result {
-    margin-top: 10px;
+    margin-top: 25px;
     width: 80%;
     max-width: 450px;
+    text-align: center;
 }
 #finalResult {
     font-size: 32px;
